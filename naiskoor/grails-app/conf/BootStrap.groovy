@@ -8,8 +8,8 @@ class BootStrap {
     def init = { servletContext ->
 
     	// Developer user
-    	def devRole = Role.findOrSaveWhere(authority: 'ROLE_DEVELOPER')
-    	def adminRole = Role.findOrSaveWhere(authority: 'ROLE_ADMIN')
+    	def devRole = Role.findOrSaveWhere(authority: 'ROLE_DEVELOPER').save()
+    	def adminRole = Role.findOrSaveWhere(authority: 'ROLE_ADMIN').save()
     	def user = User.findOrSaveWhere(username: 'dev', password: 'dev', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false, firstName: 'developer', lastName: 'developer', roleInChoir: 'Bass', eMail: 'dev@naiskoor.ee')
     	def adminUser = User.findOrSaveWhere(username: 'admin', password: 'admin', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false,  firstName: 'admin', lastName: 'admin', roleInChoir: 'Soprano', eMail: 'admin@naiskoor.ee')
     	
