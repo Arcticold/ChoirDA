@@ -32,7 +32,7 @@ environments {
     }
     production {
         dataSource {
-
+            // Protocol for production environment database connection.
             dbCreate = "update"
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
