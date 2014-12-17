@@ -12,16 +12,16 @@ class BootStrap {
     	def adminUser = User.findOrSaveWhere(username: 'admin', password: 'admin', firstName: 'admin', lastName: 'admin', roleInChoir: 'Soprano', eMail: 'admin@naiskoor.ee')
     	
     	if (!user.authorities.contains('ROLE_DEVELOPER')) {
-    		UserRole.create(user, devRole)
+    		UserRole.create(user, devRole, true)
 
     	}
 
     	if (!adminUser.authorities.contains('ROLE_ADMIN')) {
-    		UserRole.create(adminUser, adminRole)
+    		UserRole.create(adminUser, adminRole, true)
     	}
 
     	if (!adminUser.authorities.contains('ROLE_DEVELOPER')) {
-    		UserRole.create(adminUser, devRole)
+    		UserRole.create(adminUser, devRole, true)
     	}
 
     	}
