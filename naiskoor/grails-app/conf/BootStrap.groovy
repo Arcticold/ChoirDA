@@ -3,6 +3,8 @@ import ee.naiskoor.auth.*
 
 class BootStrap {
 
+    def springSecurityService
+
     def init = { servletContext ->
 
     	// Developer user
