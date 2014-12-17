@@ -25,6 +25,7 @@ class User {
 
 	static mapping = {
 		password column: '`password`'
+		table '`user`'
 	}
 
 	Set<Role> getAuthorities() {
