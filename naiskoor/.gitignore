@@ -1,4 +1,5 @@
-*.class*.iws
+*.class
+*.iws
 *Db.properties
 *Db.script
 .settings
