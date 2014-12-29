@@ -33,8 +33,8 @@ class FtpControllerSpec extends Specification {
 			host = "adalberg.ut.ee"
 			username = ""
 			password = ""
-			localFile = "D:\\Programmid.txt"
-			remoteFile = "test/Programmid.txt"
+			localFile = "C:\\New folder\\Grogrammid.txt.txt"
+			remoteFile = "test/Grogrammid.txt"
 			strictHostKeyChecking = "no" // host must be provided somewhere in known_hosts file, else the host key is rejected. Setting "no" to bypass this during testing
 		}
 	}
