@@ -116,6 +116,22 @@ log4j.main = {
            'net.sf.ehcache.hibernate'
 }
 
+jschSsh2 {
+	user = null
+	password = null
+	keyFile = null
+	keyFilePassword = null
+	port = 22
+	StrictHostKeyChecking = "yes"
+	knownHostsFile = "~/.ssh/known_hosts"
+	sshConfigFile = "~/.ssh/config"
+	connectionTimeout = 0
+	preserveTimeStamps = true
+	// Normal File Read + Write for user,
+	// Read for group and Everyone
+	defaultFilePermission = "0644"
+}
+
 
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'ee.naiskoor.auth.User'
@@ -131,5 +147,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/images/**':                  ['permitAll'],
 	'/**/favicon.ico':                ['permitAll'],
     '/dbconsole/**':                  ['permitAll'],
+	'/ftpController':				  ['permitAll'],
 ]
 

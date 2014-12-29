@@ -20,5 +20,7 @@
   <form name="logout" method="POST" action="${createLink(controller:'logout') }"> <input type="submit" value="logout"></form> 
   <h2> Time to create a User </h2>
   <g:link controller = 'User' action = 'create'>New User</g:link>
+  <br></br>
+  <g:link controller = 'ftp' >Upload</g:link>
 </body>
 </html>

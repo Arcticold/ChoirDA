@@ -67,6 +67,9 @@ grails.project.dependency.resolution = {
         compile ":asset-pipeline:1.9.9"
         // springsecurity
         compile ':spring-security-core:2.0-RC4'
+		
+		// FTP Service
+		compile ':jsch-ssh2:0.2'
 
 
         // plugins needed at runtime but not for compilation

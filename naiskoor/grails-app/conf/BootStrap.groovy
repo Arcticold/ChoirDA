@@ -14,11 +14,12 @@ class BootStrap {
     def destroy = {
     }
 
-    // Creates data neede to test the functionality locally.
+    // Creates data needed to test the functionality locally.
     def localData(){
         // Create Roles and users.
         def devRole = Role.findOrSaveWhere(authority: 'ROLE_DEVELOPER').save()
         def adminRole = Role.findOrSaveWhere(authority: 'ROLE_ADMIN').save()
+		//def publicRole = Role.findOrSaveBy(authority: 'ROLE_PUBLIC').save()
         def user = User.findOrSaveWhere(username: 'dev', password: 'dev', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false, firstName: 'developer', lastName: 'developer', roleInChoir: 'Bass', eMail: 'dev@naiskoor.ee')
         def adminUser = User.findOrSaveWhere(username: 'admin', password: 'admin', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false,  firstName: 'admin', lastName: 'admin', roleInChoir: 'Soprano', eMail: 'admin@naiskoor.ee')
         
@@ -31,8 +32,9 @@ class BootStrap {
          UserRole.create(adminUser, adminRole, true)
         }
 
-        if (!adminUser.authorities.contains('ROLE_DEVELOPER')) {
-         UserRole.create(adminUser, devRole, true)
-        }
+        //if (!adminUser.authorities.contains('ROLE_DEVELOPER')) {
+        // UserRole.create(adminUser, devRole, true)
+       // }
+		
     }
 }
