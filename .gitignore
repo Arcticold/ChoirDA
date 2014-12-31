@@ -16,3 +16,8 @@ naiskoor/target/
 /web-app/WEB-INF/classes
 /.link_to_grails_plugins/
 /target-eclipse/
+/naiskoor.sublime-project
+/naiskoor.sublime-workspace
+/naiskoor/grails-app/assets/stylesheets/mainGrails.css
+/naiskoor/lib/postgresql-9.3-1102.jdbc41.jar
+/naiskoor/web-app/css/main.css
