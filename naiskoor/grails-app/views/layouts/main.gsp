@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title><g:layoutTitle default="Grails"/></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	%{-- Twitter Bootstrap --}%
-	<r:require modules="bootstrap"/>
-	<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
-
-	<g:layoutHead/>
+    <title><g:layoutTitle default="Naiskoor"/></title>
+    <asset:stylesheet src="application.css"/>
+    <g:layoutHead/>
 </head>
+<body>
+	<!-- Application Start -->
+	<div class="application">
 
-%{-- Application start --}%
-<body class="application">
-	%{-- Application header --}%
-	<div class = "header-wrap">
-		<div class="header">
-			<div class="col-xs-2 col-sm-2 header-logo">
-					<a id="logo" href="${createLink(uri: '/')}">TÜAN</a>
+		<!-- Page Header -->
+		<div class="page-header">
+			<div class="row headerrow">
+				<div class="col-lg-2 headerelement">
+					<div class="well">
+						Placeholder for Logo
+					</div>
+				</div>
+				<div class="col-lg-3 col-lg-offset-7 headerelement">
+					<div class="well userwell" >
+						<div class="row">
+							<div class="col-lg-6">
+								Welcome, ${sec.username()}
+							</div>
+							<div class="col-lg-4 col-lg-offset-2">
+								<form name="logout" method="POST" action="${createLink(controller:'logout')}">
+									<input type="submit" value="logout">
+								</form>
+							</div>						
+						</div>							
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navbar -->
+		<div class="row navbarrow">
+			<div class = "navigation-wrap">
+				<div class="col-lg-8">
+					<nav class = "navbar" role="navigation">
+						<div class="navbar-header">
+							<span class="navbar-brand visible-xs">Menüü</span>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only"> Toggle Navigation</span>
+								<span class="glyphicon glyphicon-plus"></span>
+							</button>
+						</div>
+
+						<!-- I think the links should actually be made controllerbased, not href="" -->
+						<div class="navbar-collapse collapse  navbarelement">
+							<ul class="nav navbar-nav"> 
+								<li><a class="active" id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
+								<li><a id="nav-eesti" href="${createLink(uri: '/')}">Kalender</a></li>
+								<li><a id="nav-valismaa" href="${createLink(uri: '/')}">Arhiiv</a></li>
+								<li><a id="nav-poliitika" href="${createLink(uri: '/')}">Kasutajad</a></li>
+								<li><a id="nav-sport" href="${createLink(uri: '/')}">Halda</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+				<div class="col-lg-4 searchbar navbarelement">
+					<div class="well">
+						Placeholder for seachbar
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	%{-- Application navbar --}%
-	<div class="navbar-wrap">
-		<div class="navbar navbar-inverse">
-			
-		</div>
-	</div>
+	<!-- Application Body -->
+    <g:layoutBody/>
+    <!-- Application Body -->
 
-	%{-- Application body --}%
-	<g:layoutBody/>
+    <!-- Application Footer -->
 
-	%{-- Application Footer --}%
-	<div class="footer-wrap">
-		<div class="footer">
-			<h2>Footer</h2>	
-		</div>
-	</div>
+    <div class="row footerrow">
+    	<div class="col-lg-4 col-lg-offset-4">
+    		<div class="well footerwell">
+    			About | Licenses | naiskoor@ut.ee
+    		</div>
+    	</div>    	
+    </div>
+
+    <asset:javascript src="application.js"/>
 </body>
 </html>
