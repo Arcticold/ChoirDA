@@ -19,3 +19,9 @@ if (typeof jQuery !== 'undefined') {
 		});
 	})(jQuery);
 }
+
+$(document).ready(function() {
+    $(".usersbutton").click(function() {
+            $(".userhandling").slideToggle("fast");
+    });
+});

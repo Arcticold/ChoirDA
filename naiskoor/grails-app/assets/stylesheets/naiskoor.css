@@ -26,3 +26,20 @@ body
 {
 	height: 150px;
 }
+
+/*ADMIN INTERFACE CSS*/
+
+.adminbody
+{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 60px;
+}
+
+.userhandling,
+.fileoperations
+{
+	display: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

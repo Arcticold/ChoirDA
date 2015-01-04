@@ -31,8 +31,8 @@ class BootStrap {
          UserRole.create(adminUser, adminRole, true)
         }
 
-        if (!adminUser.authorities.contains('ROLE_DEVELOPER')) {
-         UserRole.create(adminUser, devRole, true)
-        }
+        // if (!adminUser.authorities.contains('ROLE_DEVELOPER')) {
+        //  UserRole.create(adminUser, devRole, true)
+        // }
     }
 }

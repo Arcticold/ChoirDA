@@ -53,8 +53,12 @@
 								<li><a class="active" id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
 								<li><a id="nav-eesti" href="${createLink(uri: '/')}">Kalender</a></li>
 								<li><a id="nav-valismaa" href="${createLink(uri: '/')}">Arhiiv</a></li>
+
 								<li><a id="nav-poliitika" href="${createLink(uri: '/')}">Kasutajad</a></li>
-								<li><a id="nav-sport" href="${createLink(uri: '/')}">Halda</a></li>
+
+								<li><a href="${createLink(controller: 'admin')}">Halda</a></li>
+								%{-- <li><g:createLink url="[action:'create',controller:'user']"/></li> --}%
+								%{-- <li><a id="nav-sport" href="${createLink(controller: 'register')}">Halda</a></li> --}%
 							</ul>
 						</div>
 					</nav>
