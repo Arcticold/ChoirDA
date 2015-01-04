@@ -11,22 +11,26 @@ class User {
 	boolean accountLocked
 	boolean passwordExpired
 
-	String firstName
-	String lastName
-	String roleInChoir // Soprano, ..., etc 
-	String eMail
+	// String firstName
+	// String lastName
+	// String roleInChoir // Soprano, ..., etc 
+	// String eMail
 
 	static transients = ['springSecurityService']
 
 	static constraints = {
 		username blank: false, unique: true
 		password blank: false
+		// firstName nullable: true
+		// lastName nullable: true
+		// roleInChoir nullable: true
+		// eMail nullable: true
 	}
 
-	static mapping = {
-		password column: '`password`'
-		table '`user`'
-	}
+	// static mapping = {
+	// 	password column: '`password`'
+	// 	table '`user`'
+	// }
 
 	Set<Role> getAuthorities() {
 		UserRole.findAllByUser(this).collect { it.role } as Set

@@ -2,7 +2,7 @@
 
 <head>
 	<meta name='layout' content='main'/>
-	<title><g:message code='spring.security.ui.user.search'/></title>
+	<title><g:message code='spring.security.ui.user.search'/> BLABLA</title>
 </head>
 
 <body>

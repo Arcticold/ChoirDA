@@ -19,8 +19,8 @@ class BootStrap {
         // Create Roles and users.
         def devRole = Role.findOrSaveWhere(authority: 'ROLE_DEVELOPER').save()
         def adminRole = Role.findOrSaveWhere(authority: 'ROLE_ADMIN').save()
-        def user = User.findOrSaveWhere(username: 'dev', password: 'dev', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false, firstName: 'developer', lastName: 'developer', roleInChoir: 'Bass', eMail: 'dev@naiskoor.ee')
-        def adminUser = User.findOrSaveWhere(username: 'admin', password: 'admin', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false,  firstName: 'admin', lastName: 'admin', roleInChoir: 'Soprano', eMail: 'admin@naiskoor.ee')
+        def user = User.findOrSaveWhere(username: 'dev', password: 'dev', enabled: true)
+        def adminUser = User.findOrSaveWhere(username: 'admin', password: 'admin', enabled: true)
         
         // Make the connection between a user and a role.
         if (!user.authorities.contains('ROLE_DEVELOPER')) {
