@@ -2,8 +2,9 @@
 	<g:set var="entityName" value="${message(code: 'user.label', default: 'User')}"/>
 	<title><g:message code="default.create.label" args="[entityName]"/></title>
 </head>
-<div class="userhandling">
-	<div class="row">
+
+<div class="row userhandling">
+	<div class="row userrow">
 		<div class="col-md-4">
 			<div class="well user-handling-well">
 				<div class="user-creation">
@@ -93,9 +94,9 @@
 
 				<g:if test='${searched}'>
 
-<%
-def queryParams = [username: username, enabled: enabled, accountExpired: accountExpired, accountLocked: accountLocked, passwordExpired: passwordExpired]
-%>
+				<%
+				def queryParams = [username: username, enabled: enabled, accountExpired: accountExpired, accountLocked: accountLocked, passwordExpired: passwordExpired]
+				%>
 
 				<div class="list">
 				<table>
@@ -135,6 +136,17 @@ def queryParams = [username: username, enabled: enabled, accountExpired: account
 
 			</div>
 		</div>	
+	</div>
+</div>
+
+<div class="row filehandling">
+	<div class="col-md-12">
+		<div class="well">
+			<uploadr:add name="myFirstUploadr" path="/tmp/uploadr/myFirstUploadr" maxSize="52428800" />
+			<div class="dropplace fileinput">
+				Drop Files Here
+			</div>
+			</div>
 	</div>
 </div>
 

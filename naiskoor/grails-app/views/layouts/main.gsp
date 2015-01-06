@@ -1,8 +1,13 @@
+%{-- <%@page expressionCodec="raw" %> --}%
 <!DOCTYPE html>
 <html>
 <head>
     <title><g:layoutTitle default="Naiskoor"/></title>
     <asset:stylesheet src="application.css"/>
+    <asset:javascript src="uploadr.manifest.js"/>
+    <asset:javascript src="uploadr.demo.manifest.js"/>
+    <asset:stylesheet href="uploadr.manifest.css"/>
+    <asset:stylesheet href="uploadr.demo.manifest.css"/>
     <g:layoutHead/>
 </head>
 <body>

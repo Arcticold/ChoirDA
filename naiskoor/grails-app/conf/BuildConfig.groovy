@@ -70,6 +70,9 @@ grails.project.dependency.resolution = {
         compile ":spring-security-ui:1.0-RC2"
         compile ":mail:1.0.7"
 
+        // file upload
+        compile ":uploadr:latest.integration"
+
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.6.1" // or ":hibernate:3.6.10.18"
@@ -77,6 +80,8 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.11.1"
         // Twitter Bootstrap
         runtime ':twitter-bootstrap:3.3.1'
+
+
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"
