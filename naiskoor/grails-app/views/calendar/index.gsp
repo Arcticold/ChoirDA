@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- meta name="layout" content="main"/ -->
+    %{-- <meta name="layout" content="main"/> --}%
   	<title>Tartu Ülikooli Akadeemiline Naiskoor</title>
   	
 	<link rel='stylesheet' href='assets/fullcalendar.css' />
