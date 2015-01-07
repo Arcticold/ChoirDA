@@ -79,7 +79,7 @@ grails.project.dependency.resolution = {
         compile ":mail:1.0.7"
 
         // file upload
-        compile ":uploadr:latest.integration"
+        //compile ":uploadr:latest.integration"
 
 
         // plugins needed at runtime but not for compilation

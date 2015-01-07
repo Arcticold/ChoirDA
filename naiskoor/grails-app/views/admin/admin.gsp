@@ -1,4 +1,4 @@
-<%@page expressionCodec="raw" %>
+%{-- <%@page expressionCodec="raw" %> --}%
 <!doctype html>
 
 <html lang="en">
@@ -7,14 +7,11 @@
     <meta name="layout" content="main"/>
   	<title>Tartu Ülikooli Akadeemiline Naiskoor</title>
   	<asset:stylesheet src="application.css"/>
-    <asset:javascript src="uploadr.manifest.js"/>
+%{--     <asset:javascript src="uploadr.manifest.js"/>
     <asset:javascript src="uploadr.demo.manifest.js"/>
     <asset:stylesheet href="uploadr.manifest.css"/>
     <asset:stylesheet href="uploadr.demo.manifest.css"/>
-
-
-
-  	<r:require modules="uploadr"/>
+  	<r:require modules="uploadr"/> --}%
 </head>
 <body>
 	<div class="adminbody">
