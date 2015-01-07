@@ -1,0 +1,53 @@
+body
+{
+	height: 100%;
+	background-color: #a2b8ff;
+}
+.appbody
+{
+	background-color: #a2b8ff;
+}
+
+.approw
+{
+	padding-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 200px;
+}
+
+.events
+{
+	height: 300px;
+}
+
+.recent-events,
+.admin-notifications
+{
+	height: 150px;
+}
+
+/*ADMIN INTERFACE CSS*/
+
+.adminbody
+{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 60px;
+}
+
+.userhandling,
+.fileoperations
+{
+	display: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.user-handling-well,
+.user-search-well,
+.user-creation
+{
+	height: 100%;
+}
+
