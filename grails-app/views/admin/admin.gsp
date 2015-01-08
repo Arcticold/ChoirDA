@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="layout" content="main"/>
   	<title>Tartu Ülikooli Akadeemiline Naiskoor</title>
-  	<asset:stylesheet src="application.css"/>
 %{--     <asset:javascript src="uploadr.manifest.js"/>
     <asset:javascript src="uploadr.demo.manifest.js"/>
     <asset:stylesheet href="uploadr.manifest.css"/>
