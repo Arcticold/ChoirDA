@@ -27,10 +27,10 @@ class User {
 		// eMail nullable: true
 	}
 
-	// static mapping = {
-	// 	password column: '`password`'
-	// 	table '`user`'
-	// }
+	static mapping = {
+		password column: '`password`'
+		table '`user`'
+	}
 
 	Set<Role> getAuthorities() {
 		UserRole.findAllByUser(this).collect { it.role } as Set
