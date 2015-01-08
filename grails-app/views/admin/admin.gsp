@@ -17,7 +17,6 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="well">
-					<button type="button" class="btn btn-default usersbutton">Kasutajad</button>
 					<div class="userhandling">
 						<div class="row userhandling">
 							<div class="row userrow">
