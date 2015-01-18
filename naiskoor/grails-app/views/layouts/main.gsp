@@ -57,7 +57,7 @@
 							<ul class="nav navbar-nav"> 
 								<li><a class="active" id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
 								<li><a id="nav-eesti" href="${createLink(uri: '/calendar')}">Kalender</a></li>
-								<li><a id="nav-valismaa" href="${createLink(uri: '/')}">Arhiiv</a></li>
+								<li><a id="nav-valismaa" href="${createLink(uri: '/upload')}">Arhiiv</a></li>
 
 								<li><a id="nav-poliitika" href="${createLink(uri: '/')}">Kasutajad</a></li>
 

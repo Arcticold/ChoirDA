@@ -21,6 +21,11 @@ body
 	height: 300px;
 }
 
+.upload-data-section
+{
+	height: 300px;
+}
+
 .recent-events,
 .admin-notifications
 {

@@ -80,6 +80,9 @@ grails.project.dependency.resolution = {
 
         // file upload
         //compile ":uploadr:latest.integration"
+		
+		//JSch-ssh2, used for FTP
+		compile ':jsch-ssh2:0.2'
 
 
         // plugins needed at runtime but not for compilation
