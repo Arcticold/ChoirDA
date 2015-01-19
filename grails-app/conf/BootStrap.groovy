@@ -8,7 +8,7 @@ class BootStrap {
     def init = { servletContext ->
 
         //comment this out, if you want to build with a production environment
-        localData()
+        //localData()
 
     	}
     def destroy = {
