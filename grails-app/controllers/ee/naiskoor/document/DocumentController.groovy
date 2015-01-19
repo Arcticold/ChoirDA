@@ -44,7 +44,7 @@ class DocumentController {
             String storagePath = ""
 
             if (GrailsUtil.environment == "production") {
-              storagePath = "/opt/assets"
+              storagePath = "/tmp/"
 
             }
             else {
