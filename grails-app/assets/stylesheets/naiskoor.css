@@ -45,7 +45,8 @@ body
 
 .user-handling-well,
 .user-search-well,
-.user-creation
+.user-creation,
+.upload-well
 {
 	height: 100%;
 }

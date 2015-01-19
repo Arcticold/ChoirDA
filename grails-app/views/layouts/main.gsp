@@ -5,10 +5,6 @@
     <title><g:layoutTitle default="Naiskoor"/></title>
     <asset:stylesheet src="application.css"/>
     <asset:javascript src="application.js"/>
-%{--     <asset:javascript src="uploadr.manifest.js"/>
-    <asset:javascript src="uploadr.demo.manifest.js"/>
-    <asset:stylesheet href="uploadr.manifest.css"/>
-    <asset:stylesheet href="uploadr.demo.manifest.css"/> --}%
     <g:layoutHead/>
 </head>
 <body>
@@ -58,7 +54,7 @@
 							<ul class="nav navbar-nav"> 
 								<li><a class="active" id="nav-avaleht" href="${createLink(uri: '/')}">Avaleht</a></li>
 								<li><a id="nav-eesti" href="${createLink(uri: '/calendar')}">Kalender</a></li>
-								<li><a id="nav-valismaa" href="${createLink(uri: '/')}">Arhiiv</a></li>
+								<li><a id="nav-valismaa" href="${createLink(controller: 'document')}">Arhiiv</a></li>
 
 								<li><a id="nav-poliitika" href="${createLink(uri: '/')}">Kasutajad</a></li>
 
@@ -92,7 +88,5 @@
     		</div>
     	</div>    	
     </div>
-
-    <asset:javascript src="application.js"/>
 </body>
 </html>

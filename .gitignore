@@ -16,3 +16,7 @@ stacktrace.log
 /web-app/WEB-INF/classes
 /.link_to_grails_plugins/
 /target-eclipse/
+
+uploads
+
+/web-app/WEB-INF/uploadsmuna.txt
