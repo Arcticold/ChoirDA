@@ -75,7 +75,8 @@ grails.project.dependency.resolution = {
         // springsecurity
         compile ':spring-security-core:2.0-RC4'
         compile ":spring-security-ui:1.0-RC2"
-		
+		// ftp
+        compile ':jsch-ssh2:0.2'
         compile ":mail:1.0.7"
 
         // plugins needed at runtime but not for compilation

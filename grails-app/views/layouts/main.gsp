@@ -59,6 +59,8 @@
 								<li><a id="nav-poliitika" href="${createLink(uri: '/')}">Kasutajad</a></li>
 
 								<li><a href="${createLink(controller: 'admin')}">Halda</a></li>
+
+								<li><a href="${createLink(controller: 'note')}">Teade</a></li>
 								%{-- <li><g:createLink url="[action:'create',controller:'user']"/></li> --}%
 								%{-- <li><a id="nav-sport" href="${createLink(controller: 'register')}">Halda</a></li> --}%
 							</ul>
