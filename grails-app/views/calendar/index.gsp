@@ -8,7 +8,7 @@
     <asset:javascript src="moment.min"/>
     <asset:stylesheet href="fullcalendar.css"/>
 </head>
-
+%{-- pointless comment --}%
 <body>
     <div class="row calendar-row">
         <div class="well">
