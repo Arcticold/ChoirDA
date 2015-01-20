@@ -14,7 +14,7 @@
 				<div class="well upload-data-section">
 					<g:form controller="Upload" action="readContents">
 						<fieldset>
-							<legend>Upload</legend>
+							<legend>Read contents</legend>
 							<div>
 								<label for="Server address">Server address</label>
 								<input type ="text" name="ServerAddress" value = "" />
@@ -29,7 +29,7 @@
 							</div>
 							<div>
             					<!-- label>&nbsp;</label-->
-            					<input type="submit" value="Upload" />
+            					<input type="submit" value="Read" />
           					</div>
 						</fieldset>
 					</g:form>
