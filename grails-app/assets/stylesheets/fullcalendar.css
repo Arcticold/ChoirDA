@@ -36,6 +36,10 @@ body .fc { /* extra precedence to overcome jqui */
 	background-color: #fff;
 }
 
+.fc-view-container{
+	background-color: #fcf8e3;
+}
+
 .fc-unthemed hr,
 .fc-unthemed .fc-popover .fc-header {
 	background: #eee;
@@ -46,7 +50,7 @@ body .fc { /* extra precedence to overcome jqui */
 }
 
 .fc-unthemed .fc-today {
-	background: #fcf8e3;
+	background: #FFE663;
 }
 
 .fc-highlight { /* when user is selecting cells */

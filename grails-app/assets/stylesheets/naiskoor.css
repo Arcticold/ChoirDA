@@ -29,7 +29,8 @@ body
 
 /*ADMIN INTERFACE CSS*/
 
-.adminbody
+.adminbody,
+.calendar-row
 {
 	padding-left: 100px;
 	padding-right: 100px;
@@ -46,8 +47,13 @@ body
 .user-handling-well,
 .user-search-well,
 .user-creation,
-.upload-well
+.upload-well,
 {
 	height: 100%;
+}
+
+h1
+{
+	margin-top: 0;
 }
 

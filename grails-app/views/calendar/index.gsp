@@ -2,36 +2,55 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    %{-- <meta name="layout" content="main"/> --}%
-  	<title>Tartu Ülikooli Akadeemiline Naiskoor</title>
-  	
-	<link rel='stylesheet' href='assets/fullcalendar.css' />
-	<script src='assets/jquery.min.js'></script>
-	<script src='assets/moment.min.js'></script>
-	<script src='assets/fullcalendar.js'></script>
-
-	<script>
-	$(document).ready(function() {
-
-    // page is now ready, initialize the calendar...
-
-    $('#calendar').fullCalendar({
-        // put your options and callbacks here
-    })
-
-	});</script>
-
-
+    <meta name="layout" content="main"/>
+    <asset:javascript src="fullcalendar.js"/>
+    <asset:javascript src="gcal.js"/>
+    <asset:javascript src="moment.min"/>
+    <asset:stylesheet href="fullcalendar.css"/>
 </head>
+
 <body>
+    <div class="row calendar-row">
+        <div class="well">
+            <div class="col-md-6">
+                <div id='calendar'></div>
+            </div>
+            <div class="col-md-6">
+                    <h1>Üritused</h1>
+                <div class="event-handling">
+                    <div class=" row creation-row">
+                        <g:form url="[resource:eventInstance, action:'save', controller:'event']" update="eventInstanceList" name="eventForm">
+                            <fieldset class="form">
+                                <g:render template="/event/form"/>
+                            </fieldset>
+                            <fieldset class="buttons">
+                                <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+                            </fieldset>
+                        </g:form>
+                    </div>
+                    <div class="row display-row">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h3>Kalender</h3>
+
+<script>
+$(document).ready(function() {
+
+// page is now ready, initialize the calendar...
+
+$('#calendar').fullCalendar({
+// put your options and callbacks here
+})
+});
 
 
- <div id='calendar'></div>
+</script>
 
+</body> 
 
-</body>
 
 </html>
