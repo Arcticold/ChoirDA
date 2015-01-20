@@ -1,0 +1,88 @@
+.application
+{
+	background-color: #a2b8ff;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.page-header
+{
+	
+	background-color: #a2b8ff;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+.headerrow,
+.navbarrow
+{
+	height: 80px;
+}
+
+.headerrow,
+.navbarrow
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.well
+{
+	margin-bottom: 0;
+	height: 60px;
+}
+
+.headerelement
+
+{
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+}
+
+.navbarelement
+{
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+}
+
+.navigation-wrap,
+.navbar
+{
+	height: 80px;
+	margin: 0px;
+	border: 0px;
+}
+
+.navbar
+{
+	padding-left: 80px;
+	padding-right: 20px;
+}
+
+.navbar-collapse
+{
+	padding: 0px;
+}
+
+.nav li 
+{
+	padding-right: 50px;
+	font-size: 20px;
+}
+
+.footerrow
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
