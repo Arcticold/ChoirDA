@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="layout" content="main"/>
   	<title>Tartu Ülikooli Akadeemiline Naiskoor</title>
+  	<g:javascript library="prototype"/>
   	%{-- Adding the layout for the site --}%
 </head>
 <body>
@@ -23,7 +24,12 @@
 				</div>
 				<div class="row">
 					<div class="well admin-notifications">
-						Placeholder for admin notifications
+						<div id="messages">
+							<!-- g:render template="messages" collection="${messages}" var="message"/-->
+							<g:each in="${note}" var="it">
+    							<div>${it.renderAsHtml()}</div>
+  							</g:each>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -24,6 +24,13 @@ class UploadController {
 		return [lsOut:token]
 	}
 	
+	def downloadFile()
+	{
+		new ScpFileFrom().execute() {
+			
+		}
+	}
+	
 	def dataStore() // gets user inserted data
 	{
 		String serverAddress = params.ServerAddress
